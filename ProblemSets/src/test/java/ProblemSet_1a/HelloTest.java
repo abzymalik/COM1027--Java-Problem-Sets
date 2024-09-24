@@ -23,3 +23,6 @@ public class HelloTest {
 	assertEquals("My name is Stella", name.display());
     }
 }
+
+// 1. CREATE A CONSTRUCTOR FOR THE HELLO WORLD CLASS
+// 2. CREATE A METHOD CALLED DISPLAY FOR HELLO WORLD CLASS
