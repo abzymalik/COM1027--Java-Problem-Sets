@@ -1,4 +1,4 @@
-package ProblemSet_1a; 
+package ProblemSet_1a;
 
 public class HelloWorld {
 
@@ -8,7 +8,6 @@ public class HelloWorld {
 	// Constructor for the HelloWorld class which takes a String as a parameter.
     // The constructor is called when an object of the class is created.
 	public HelloWorld(String string) {
-		// The parameter "string" is assigned to the private attribute "text".
 		text = string;
 	}
 
