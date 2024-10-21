@@ -5,10 +5,10 @@ public class Student {
 	private String surname = null;
 	private int age = 0;
 	
-	public Student(String string, String string2, int i) {
-		this.forename = string;
-		this.surname = string2;
-		this.age = i;
+	public Student(String forename, String surname, int age) {
+		this.forename = forename;
+		this.surname = surname;
+		this.age = age;
 	}
 
 	public String getForename() {
@@ -34,7 +34,7 @@ public class Student {
 	public void setAge(int age) {
 		this.age = age;
 	}
-	public String getFullName() {
+	public String getFullname() {
 		return forename + " " + surname;
 	}
 }
