@@ -2,7 +2,6 @@ package ProblemSet_3a;
 
 public class Position {
 	private String role = null;
-	
 	public String getRoleName() {
 		return role;
 	}
