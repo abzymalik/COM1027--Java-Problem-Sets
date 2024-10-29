@@ -1,38 +1,55 @@
 package ProblemSet_3c;
 
-public class AnnualSalary {
+public class AnnualSalary{
 	private double salary;
-	private static final double PERSONAL_ALLOWANCE = 12500.0;
-
-	public AnnualSalary() {}
+	private static final double PERSONAL_ALLOWANCE = 12570;
 	public AnnualSalary(double salary) {
 		this.salary = salary;
 	}
-
-	public double getSalary() {
-		return salary;
+	public AnnualSalary() {
+		this.salary = 0.0;
 	}
-
+	public double getSalary() {
+		return this.salary;
+	}
 	public void setSalary(double salary) {
 		this.salary = salary;
 	}
-	
 	public double calculateTax() {
-		double taxableIncome = salary - PERSONAL_ALLOWANCE;
-		double tax = 0.0;
-		
-		if (taxableIncome <= 0) {
-			return tax;
-		} 
-		if (taxableIncome <= 37500) {
-			tax =  taxableIncome * 0.20;
+		double taxIncome = this.salary;
+		double tax = 0;
+		if (taxIncome <= PERSONAL_ALLOWANCE) {
+			tax = 0;
+		} else if (taxIncome <= 50270) {
+			tax = (taxIncome - PERSONAL_ALLOWANCE) * 0.20;
+		} else if (taxIncome  <= 125140) {
+			tax = ((50270 - PERSONAL_ALLOWANCE) * 0.20)  +((taxIncome - 50270) * 0.40);
 		} else {
-			tax = 37500 * 0.20;
-			
-			tax += (taxableIncome - 37500) * 0.40;
+			tax = ((50270 - PERSONAL_ALLOWANCE) * 0.20) + ((125140 - 50270) * 0.40) + ((taxIncome - 125140) * 0.45);
 		}
-		
 		return tax;
 	}
-
 }
+	 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -12,7 +12,8 @@ public class Module {
 		this.assessment3 = assessment3;	
 	}
 	public double calculateAverage() {
-		return (assessment1.getMark() * 0.2) + (assessment2.getMark() * 0.2)
+		return (assessment1.getMark() * 0.2) 
+				+ (assessment2.getMark() * 0.2)
 				+ (assessment3.getMark() * 0.6);
 	}
 	@Override
