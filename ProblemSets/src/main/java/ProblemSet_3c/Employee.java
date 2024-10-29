@@ -14,18 +14,41 @@ public class Employee {
 		this.salary = salary;
 		this.companyPosition = companyPosition;
 	}
+
+	public int getId() {
+		return id;
+	}
+
+	public String getForename() {
+		return forename;
+	}
+
+	public String getSurname() {
+		return surname;
+	}
+
+	public double getSalary() {
+		return salary.getSalary();
+	}
+
+	public String getPositionName() {
+		return companyPosition.getPositionName();
+	}
 	public void displayEmployeeName() {
 		System.out.println(forename + " " + surname);
 	}
 	public boolean eligibleForBonus() {
 		return salary.getSalary() > 40000;
- 	}
+	}
+
 	@Override
 	public String toString() {
 		double tax = salary.calculateTax();
-		String eligibility = eligibleForBonus() ? "is eligible for bonus." : "is not eligible for bonus.";
-		return surname + ", " + forename + " (" + id + "): " + companyPosition + " at $" + salary.getSalary() + " ($" + tax + "tax) and " + eligibility;
+		String bonusEligibility = eligibleForBonus() ? "is eligible for bonus." : "is not eligible for bonus.";
+		
+		return surname + ", " + forename + " (" + id +"): " + companyPosition + " at £" + salary.getSalary() + " (£" + tax + " tax) and " + bonusEligibility;
 	}
 	
 	
+
 }
