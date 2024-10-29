@@ -3,7 +3,6 @@ package ProblemSet_4a;
 public class Day{
 	private String name;
 	private Session[] sessions;
-	
 	public Day(String name) {
 		this.name = name;
 		this.sessions = new Session[4];
