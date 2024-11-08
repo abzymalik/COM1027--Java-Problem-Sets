@@ -12,7 +12,6 @@ public class Ingredient {
 		this.supplier = supplier;
 		this.rawWeight = rawWeight;
 	}
-	
 	public double getCookedWeight() {
 		return rawWeight * 0.80;
 	}
