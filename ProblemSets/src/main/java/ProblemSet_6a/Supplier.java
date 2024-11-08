@@ -9,8 +9,8 @@ public class Supplier {
 				|| phone.matches("01483-\\d{6}")) {
 			this.phone = phone;
 		} else {
-			throw new IllegalArgumentException
-			("Invalid phone number format");
+			throw new IllegalArgumentException(
+					"Invalid phone number format");
 		}
 	}
 
