@@ -6,16 +6,17 @@ public class Supplier {
 	
 	public Supplier(String name, String phone) {
 		this.name = name;
-		if (phone.matches("01483\\d{6}") || phone.matches("01483-\\d{6}")) {
+		if (phone.matches("01483\\d{6}") || 
+				phone.matches("01483-\\d{6}")) {
 			this.phone = phone;
 		} else {
-			throw new IllegalArgumentException("Invalid phone number structure");
+			throw new IllegalArgumentException("Invalid phone number format");
 		}
 	}
 
 	@Override
 	public String toString() {
-		return name + "(" + phone +")";
+		return name + "(" + phone + ")";
 	}
 	public String getName() {
 		return name;
