@@ -41,6 +41,11 @@
 			<artifactId>checkstyle</artifactId>
 			<version>10.12.3</version>
 		</dependency>
+		<dependency>
+			<groupId>com.com1027</groupId>
+			<artifactId>COM1027-Practicals-am05550</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 </project>
 
