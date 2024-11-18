@@ -15,16 +15,18 @@ public class Palette {
 			}
 		}
 	}
-	
+
 	public String addColour(P_COLOUR colour) {
 		if (counter >= 3) {
-			throw new IllegalArgumentException("Only up to 3 colours are allowed");
+			throw new IllegalArgumentException(
+					"Only up to 3 colours are allowed");
 		}
 		for (int i = 0; i < counter; i++) {
 			if (primaryColours[i] == colour) {
-				throw new IllegalArgumentException("Colour already exists");
+				throw new IllegalArgumentException(
+						"Colour already exists");
 			}
-		} 
+		}
 		primaryColours[counter] = colour;
 		counter++;
 		return colour + " added";
