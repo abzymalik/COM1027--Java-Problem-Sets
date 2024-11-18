@@ -11,7 +11,8 @@ public class Customer {
 			this.surname = surname;
 			} else {
 				throw new IllegalArgumentException(
-						"Invalid name and surname format");
+						"Invalid name and surname"
+						+ "format");
 			}
 	}
 
