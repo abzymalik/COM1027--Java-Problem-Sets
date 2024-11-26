@@ -22,7 +22,7 @@ public class Counting{
 		
 }
 	public String displayLine(String line, int count) {
-		return line +": "+count;
+		return line + " : "+count;
 	}
 }
 class Main{
