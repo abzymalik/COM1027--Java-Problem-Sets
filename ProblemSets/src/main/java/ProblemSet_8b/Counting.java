@@ -11,7 +11,8 @@ public class Counting {
 				new FileReader(filename))) {
 			String line;
 			while ((line = reader.readLine()) != null) {
-				content.append(displayLine(line, counter)).append("\n");
+				content.append(displayLine(line, counter)
+						).append("\n");
 				counter++;
 			}
 		}
