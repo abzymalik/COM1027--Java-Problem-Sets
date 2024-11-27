@@ -3,10 +3,11 @@ package ProblemSet_9a;
 public class Charge {
 	private Service service;
 	private double charge;
-	
+
 	public Charge(Service service, double charge) {
 		if (charge <= 0) {
-			throw new IllegalArgumentException("No negative charge allowed");
+			throw new IllegalArgumentException
+			("No negative charge allowed");
 		}
 		this.service = service;
 		this.charge = charge;
@@ -19,7 +20,7 @@ public class Charge {
 	public double getCharge() {
 		return charge;
 	}
-	
+
 	public double calculateVAT() {
 		switch (service.getRate()) {
 		case STANDARD:
@@ -30,7 +31,8 @@ public class Charge {
 			return 0.0;
 		
 		default:
-			throw new IllegalArgumentException("Unexpected VAT rate.");
+			throw new IllegalArgumentException
+			("Unexpected VAT rate.");
 		}
 	}
 

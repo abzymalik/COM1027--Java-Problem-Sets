@@ -4,7 +4,7 @@ public class Service {
 	private String code;
 	private String name;
 	private VATRate rate;
-	
+
 	public Service(String code, String name, VATRate rate) {
 	    super();
 	    if (code == null || name == null || rate == null) {
