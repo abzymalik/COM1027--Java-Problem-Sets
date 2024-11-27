@@ -6,8 +6,8 @@ public class Charge {
 
 	public Charge(Service service, double charge) {
 		if (charge <= 0) {
-			throw new IllegalArgumentException
-			("No negative charge allowed");
+			throw new IllegalArgumentException(
+					"No negative charge allowed");
 		}
 		this.service = service;
 		this.charge = charge;
@@ -29,10 +29,10 @@ public class Charge {
 			return charge * 0.05;
 		case ZERO:
 			return 0.0;
-		
+
 		default:
-			throw new IllegalArgumentException
-			("Unexpected VAT rate.");
+			throw new IllegalArgumentException(
+					"Unexpected VAT rate.");
 		}
 	}
 
