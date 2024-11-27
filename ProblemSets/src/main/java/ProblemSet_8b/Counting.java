@@ -15,8 +15,7 @@ public class Counting {
 						).append("\n");
 				counter++;
 			}
-		}
-		catch (IOException e) {
+		} catch (IOException e) {
 			e.printStackTrace();
 		}
 		return content.toString();
@@ -25,5 +24,4 @@ public class Counting {
 	public String displayLine(String line, int count) {
 		return line + " : " + count;
 	}
-}
-
+}		
