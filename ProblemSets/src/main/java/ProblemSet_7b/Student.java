@@ -41,7 +41,7 @@ public class Student {
 		StringBuilder display = new StringBuilder();
 		for (int i = 0; i < moduleList.size(); i++) {
 			display.append(moduleList.get(i).getName());
-			if(i < moduleList.size() - 1) {
+			if (i < moduleList.size() - 1) {
 				display.append(", ");
 			}
 		}
