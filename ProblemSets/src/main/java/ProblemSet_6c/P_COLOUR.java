@@ -1,4 +1,4 @@
-package ProblemSet_6b;
+package ProblemSet_6c;
 
 public enum P_COLOUR {
 	RED,
