@@ -7,7 +7,7 @@ public class Student {
 	private String name;
 	private int urn;
 	private List<Module> moduleList;
-	
+
 	public Student(String name, String urn) {
 		super();
 		if (name.matches("[A-Z][a-z]+ [A-Z][a-z]+")) {
@@ -22,7 +22,7 @@ public class Student {
 		}
 		this.moduleList = new ArrayList<>();
 	}
-	
+
 	public String getName() {
 		return name;
 	}
@@ -30,13 +30,13 @@ public class Student {
 	public int getUrn() {
 		return urn;
 	}
-	
+
 	public void addModuleList(Module m) {
 		if (m != null && !moduleList.contains(m)) {
 			moduleList.add(m);
 		}
 	}
-	
+
 	public String printModules() {
 		StringBuilder display = new StringBuilder();
 		for (int i = 0; i < moduleList.size(); i++) {
