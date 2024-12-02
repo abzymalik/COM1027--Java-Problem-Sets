@@ -39,7 +39,7 @@ public class StudentTracker {
 	public String printStudents() {
 	    StringBuilder students = new StringBuilder();
 	    for (Student s : studentList) {
-	        students.append(s.getName()) 
+	        students.append(s.getName())
 	                .append("(")
 	                .append(s.getUrn())
 	                .append(")")
@@ -55,7 +55,8 @@ public class StudentTracker {
 
 		if (moduleList.containsKey(urn)) {
 			Student student = moduleList.get(urn);
-			return "URN " + urn + " is enrolled in:\n" + student.printModules();
+			return "URN " + urn + " is enrolled in:\n"
+					+ student.printModules();
 		} else {
 			return "URN " + urn + " not found.";
 		}
