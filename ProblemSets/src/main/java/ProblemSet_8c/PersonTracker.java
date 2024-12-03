@@ -35,8 +35,8 @@ public class PersonTracker {
 	public String readTextFile(String file) throws RuntimeException {
 		StringBuilder toReturn = new StringBuilder();
 		try {
-			BufferedReader reader = new BufferedReader
-					(new FileReader(file));
+			BufferedReader reader = new BufferedReader(
+					new FileReader(file));
 			String line = reader.readLine();
 
 			while (line != null) {
@@ -63,6 +63,8 @@ public class PersonTracker {
 	/**
 	 * Gets all the people present in the tracker
 	 * and returns all the elements in the people list.
+	 * 
+	 * @return all elements in people list
 	 */
 	public String getPeopleList() {
 		return this.peopleList.toString();
