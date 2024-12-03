@@ -1,34 +1,39 @@
 package ProblemSet_9b;
 
-import ProblemSet_9a.Service;
 
 public class Charge {
 	private Service service;
-	private double charge;
+	private double charges;
 
-	public Charge(Service service, double charge) {
-		if (charge <= 0) {
+	public Charge(Service service, double charges) throws IllegalArgumentException {
+		if (charges <= 0) {
 			throw new IllegalArgumentException(
 					"No negative charge allowed");
 		}
 		this.service = service;
-		this.charge = charge;
+		this.charges = charges;
 	}
 
 	public Service getService() {
-		return service;
+		return this.service;
 	}
 
-	public double getCharge() {
-		return charge;
+	public double getCharges() {
+		return this.charges;
 	}
-
+	/**
+	 * Calculates the VAT based on the rate provided by the service.
+	 * The VAT Rate can be one of the following
+	 * 
+	 * @return the calculated VAT as a double value
+	 * @throws IllegalArgumentException if the VAT Rate is not recognised.
+	 */
 	public double calculateVAT() {
 		switch (service.getRate()) {
 		case STANDARD:
-			return charge * 0.20;
+			return charges * 0.20;
 		case LOW:
-			return charge * 0.05;
+			return charges * 0.05;
 		case ZERO:
 			return 0.0;
 
