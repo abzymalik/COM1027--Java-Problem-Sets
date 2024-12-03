@@ -12,7 +12,8 @@ public class Palette {
 	    super();
 	    for (P_COLOUR colour : colours) {
 	        if (colour == null) {
-	            throw new IllegalArgumentException("Null values are not allowed");
+	            throw new IllegalArgumentException(
+	            		"Null values are not allowed");
 	        }
 	        addColour(colour);
 	    }
@@ -20,7 +21,8 @@ public class Palette {
 
 	public String addColour(P_COLOUR colour) {
 		if (counter > 3) {
-			throw new IllegalArgumentException("Only up to 3 colours are allowed");
+			throw new IllegalArgumentException(
+					"Only up to 3 colours are allowed");
 		}
 		for (int i = 0; i < counter; i++) {
 			if (primaryColours[i] == colour) {
@@ -57,9 +59,11 @@ public class Palette {
 			if (primaryColour != null) {
 				if (primaryColour.equals(P_COLOUR.RED)) {
 					colourMap[0] = "1";
-				} else if (primaryColour.equals(P_COLOUR.YELLOW)) {
+				} else if (primaryColour.equals(
+						P_COLOUR.YELLOW)) {
 					colourMap[1] = "1";
-				} else if (primaryColour.equals(P_COLOUR.BLUE)) {
+				} else if (primaryColour.equals(
+						P_COLOUR.BLUE)) {
 					colourMap[2] = "1";
 			}
 		}
