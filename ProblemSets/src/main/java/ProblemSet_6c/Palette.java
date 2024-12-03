@@ -8,22 +8,21 @@ public class Palette {
 		super();
 	}
 
-	public Palette(P_COLOUR[] colours) throws IllegalArgumentException {
+	public Palette(P_COLOUR[] colours) {
 	    super();
 	    for (P_COLOUR colour : colours) {
-	        if (colour == null) {
-	            throw new IllegalArgumentException(
-	            		"Null values are not allowed");
-	        }
-	        addColour(colour);
+	    	if (colour != null) {
+	    	    addColour(colour);
+	    	}
+	    	if (counter >= 3) {
+				throw new IllegalArgumentException(
+						"Only up to 3 colours are allowed");
+			}
 	    }
+
 	}
 
 	public String addColour(P_COLOUR colour) {
-		if (counter > 3) {
-			throw new IllegalArgumentException(
-					"Only up to 3 colours are allowed");
-		}
 		for (int i = 0; i < counter; i++) {
 			if (primaryColours[i] == colour) {
 				throw new IllegalArgumentException(
