@@ -5,7 +5,8 @@ public class Charge {
 	private Service service;
 	private double charges;
 
-	public Charge(Service service, double charges) throws IllegalArgumentException {
+	public Charge(Service service, double charges)
+			throws IllegalArgumentException {
 		if (charges <= 0) {
 			throw new IllegalArgumentException(
 					"No negative charge allowed");
@@ -24,7 +25,7 @@ public class Charge {
 	/**
 	 * Calculates the VAT based on the rate provided by the service.
 	 * The VAT Rate can be one of the following
-	 * 
+	 *
 	 * @return the calculated VAT as a double value
 	 * @throws IllegalArgumentException if the VAT Rate is not recognised.
 	 */

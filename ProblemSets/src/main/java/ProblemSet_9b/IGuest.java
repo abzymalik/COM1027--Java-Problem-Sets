@@ -3,7 +3,7 @@ package ProblemSet_9b;
 public interface IGuest {
 	/**
 	 * Creates a new charge object with the following parameters.
-	 * 
+	 *
 	 * @param s
 	 * @param c
 	 */
@@ -11,7 +11,7 @@ public interface IGuest {
 
 	/**
 	 * Calculates total Pre-VAT.
-	 * 
+	 *
 	 * @return total charge excluding VAT
 	 */
 	public abstract double calculateTotalChargeWithoutVAT();
@@ -21,16 +21,16 @@ public interface IGuest {
 	 * the guest has at the specified VAT Rate.
 	 *
 	 * @param r
-	 * @return
+	 * @return total
 	 */
 	public abstract double calculateVATChargeAtRate(VATRate r);
 
 	/**
-	 * Calculates total Post-VAT
+	 * Calculates total Post-VAT.
 	 *
 	 * @return total including VAT
 	 */
 	public abstract double calculateTotalChargeIncVAT();
-	
+
 	public abstract String toString();
 }
