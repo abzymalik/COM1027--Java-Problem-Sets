@@ -63,7 +63,7 @@ public class PersonTracker {
 	/**
 	 * Gets all the people present in the tracker
 	 * and returns all the elements in the people list.
-	 * 
+	 *
 	 * @return all elements in people list
 	 */
 	public String getPeopleList() {
