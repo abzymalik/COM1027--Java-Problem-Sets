@@ -8,9 +8,9 @@ public class Hotel {
 	 * Hotel name.
 	 */
 	private String name;
-	
+
 	/**
-	 * List of all the guests at the hotel
+	 * List of all the guests at the hotel.
 	 */
 	private List<IGuest> guests;
 
@@ -23,7 +23,7 @@ public class Hotel {
 	}
 
 	/**
-	 * Adds guest to the hotel guest list
+	 * Adds guest to the hotel guest list.
 	 *
 	 * @param guest
 	 */
@@ -32,7 +32,7 @@ public class Hotel {
 		this.guests.add(guest);
 	}
 
-	public List<IGuest> getGuests(){
+	public List<IGuest> getGuests() {
 		return this.guests;
 	}
 
@@ -45,12 +45,12 @@ public class Hotel {
 	 * @return list of all guests in the hotel
 	 */
 	public String printGuestList() {
-		StringBuilder GuestList = new StringBuilder();
-		GuestList.append(this.name).append(" Hotel\n").
+		StringBuilder guestList = new StringBuilder();
+		guestList.append(this.name).append(" Hotel\n").
 		append("Guest List\n");
 		for (IGuest guest: this.guests) {
-			GuestList.append(guest.toString()).append("\n");
+			guestList.append(guest.toString()).append("\n");
 		}
-		return GuestList.toString();
+		return guestList.toString();
 	}
 }
