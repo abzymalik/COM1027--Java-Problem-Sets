@@ -15,8 +15,8 @@ public class Palette {
 	    	    addColour(colour);
 	    	}
 	    	if (counter >= 3) {
-				throw new IllegalArgumentException(
-						"Only up to 3 colours are allowed");
+				throw new IllegalArgumentException("Only up to"
+						+ "3 colours are allowed");
 			}
 	    }
 
