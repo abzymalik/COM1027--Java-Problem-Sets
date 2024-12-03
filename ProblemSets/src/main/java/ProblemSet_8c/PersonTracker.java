@@ -14,19 +14,19 @@ public class PersonTracker {
 	}
 	/**
 	 * Adds a Person object to Person list
-	 * 
+	 *
 	 * @param f
 	 * @param s
-	 * @param a 
+	 * @param a
 	 */
-	
+
 	public void addPerson(String f, String s, int a) {
 		this.peopleList.add(new Person(f, s, a));
 	}
-	
+
 	/**
 	 * Reads the filename
-	 * 
+	 *
 	 * @param filename of the filename to be read and checked]
 	 * @return contents of the file
 	 * @throws RunTimeException if file read fails
@@ -54,7 +54,6 @@ public class PersonTracker {
 	 * Parses the line and constructs a Person object to add to the liust
 	 * @param line
 	 */
-
 	private void breakLine(String line) {
 		String[] parts = line.split(" ");
 		this.addPerson(parts[0], parts[1], Integer.parseInt(parts[2]));
@@ -68,7 +67,7 @@ public class PersonTracker {
 	}
 	/**
 	 * Returns the list of all people present in the tracker 
-	 * @return
+	 * @return all people on a new line
 	 */
 
 	public String displayList() {
