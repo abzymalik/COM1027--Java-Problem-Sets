@@ -4,6 +4,7 @@ public class Supplier {
 	private String name;
 	private String phone;
 	public Supplier(String name, String phone) {
+		super();
 		this.name = name;
 		if (phone.matches("01483\\d{6}")
 				|| phone.matches("01483-\\d{6}")) {
