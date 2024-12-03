@@ -1,6 +1,7 @@
 package ProblemSet_9c;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Guest implements IGuest {
 	/**
@@ -36,7 +37,8 @@ public class Guest implements IGuest {
 	 * @param address
 	 * @param telephone
 	 */
-	public Guest(String forename, String surname, String address, String telephone) {
+	public Guest(String forename, String surname,
+			String address, String telephone) {
 		super();
 		this.forename = forename;
 		this.surname = surname;
@@ -68,7 +70,7 @@ public class Guest implements IGuest {
 	/**
 	 * Creates a new charge object with the following parameters
 	 * and adds it to the list of charges.
-	 * 
+	 *
 	 * @param s
 	 * @param c
 	 */
@@ -79,7 +81,7 @@ public class Guest implements IGuest {
 
 	/**
 	 * Calculates totL PRE-VAT.
-	 * 
+	 *
 	 * @return total charge excluding vat
 	 */
 	@Override
@@ -93,11 +95,11 @@ public class Guest implements IGuest {
 
 	/**
 	 * Calculates sum of all vat percentages for all the charges.
-	 * 
+	 *
 	 * @param r
 	 * @return total of products that meet the rate provided
 	 */
-	
+
 	@Override
 	public double calculateVATChargeAtRate(VATRate r) {
 		double total = 0;
@@ -111,7 +113,7 @@ public class Guest implements IGuest {
 
 	/**
 	 * Calculates total Post-VAT
-	 * 
+	 *
 	 * @return total including vat
 	 */
 	@Override 
@@ -125,6 +127,7 @@ public class Guest implements IGuest {
 
 	@Override
 	public String toString() {
-		return String.format("%s %s, %s, %s", this.forename, this.surname, this.address, this.telephone );
+		return String.format("%s %s, %s, %s", this.forename,
+				this.surname,this.address, this.telephone );
 	}
 }
