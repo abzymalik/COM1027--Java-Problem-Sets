@@ -17,7 +17,7 @@ public class Charge {
 		return this.service;
 	}
 
-	public double getCharges() {
+	public double getCharge() {
 		return this.charges;
 	}
 	/**
