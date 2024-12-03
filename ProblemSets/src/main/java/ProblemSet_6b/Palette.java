@@ -5,7 +5,7 @@ public class Palette {
 	private int counter = 0;
 
 	public Palette() {
-
+		super();
 	}
 
 	public Palette(P_COLOUR[] colours) {
