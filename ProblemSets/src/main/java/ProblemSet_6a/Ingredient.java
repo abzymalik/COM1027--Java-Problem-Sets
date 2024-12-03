@@ -7,6 +7,7 @@ public class Ingredient {
 	private double rawWeight;
 	public Ingredient(String name, IngredientType type, Supplier supplier,
 			double rawWeight) {
+		super();
 		this.name = name;
 		this.type = type;
 		this.supplier = supplier;
