@@ -4,7 +4,7 @@ public class Person {
 	private String forename;
 	private String surname;
 	private int age;
-	
+
 	/**
 	 * Constructs a Person object
 	 * 

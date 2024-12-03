@@ -31,13 +31,13 @@ public class PersonTracker {
 	 * @return contents of the file
 	 * @throws RunTimeException if file read fails
 	 */
-	
+
 	public String readTextFile(String file) throws RuntimeException {
 		StringBuilder toReturn = new StringBuilder();
 		try {
 			BufferedReader reader = new BufferedReader(new FileReader(file));
 			String line = reader.readLine();
-			
+
 			while (line != null) {
 				this.breakLine(line);
 				toReturn.append(String.format("%s\n", line));
@@ -49,17 +49,17 @@ public class PersonTracker {
 		}
 		return toReturn.toString();
 	}
-	
+
 	/**
 	 * Parses the line and constructs a Person object to add to the liust
 	 * @param line
 	 */
-	
+
 	private void breakLine(String line) {
 		String[] parts = line.split(" ");
 		this.addPerson(parts[0], parts[1], Integer.parseInt(parts[2]));
 	}
-	
+
 	/**
 	 * Gets all the people present in the tracker and returns all the elements in the people list
 	 */
@@ -68,9 +68,9 @@ public class PersonTracker {
 	}
 	/**
 	 * Returns the list of all people present in the tracker 
-	 * @return 
+	 * @return
 	 */
-	
+
 	public String displayList() {
 		StringBuilder toReturn = new StringBuilder();
 		for (Person person : this.peopleList) {
