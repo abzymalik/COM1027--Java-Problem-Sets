@@ -9,6 +9,7 @@ public class Palette {
 	}
 
 	public Palette(P_COLOUR[] colours) {
+		super();
 		for (P_COLOUR colour: colours) {
 			if (colour != null) {
 				addColour(colour);
