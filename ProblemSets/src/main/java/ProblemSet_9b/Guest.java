@@ -112,8 +112,8 @@ public class Guest implements IGuest {
 	}
 
 	/**
-	 * Calculates total Post-VAT
-	 * 
+	 * Calculates total Post-VAT.
+	 *
 	 * @return total including vat
 	 */
 	@Override
@@ -127,6 +127,7 @@ public class Guest implements IGuest {
 
 	@Override
 	public String toString() {
-		return String.format("%s %s, %s, %s", this.forename, this.surname, this.address, this.telephone );
+		return String.format("%s %s, %s, %s", this.forename,
+				this.surname, this.address, this.telephone);
 	}
 }
