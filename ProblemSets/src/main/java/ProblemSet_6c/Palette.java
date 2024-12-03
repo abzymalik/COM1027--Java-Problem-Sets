@@ -46,11 +46,11 @@ public class Palette {
 		}
 		return display.toString();
 	}
-	
+
 	public String display() {
 		return this.getColours() + " = " + this.mixColours();
 	}
-	
+
 	public String mixColours() {
 		String[] colourMap = {"0", "0", "0"};
 		for (P_COLOUR primaryColour : this.primaryColours) {

@@ -13,7 +13,7 @@ public class PersonTracker {
 		this.peopleList = new ArrayList<Person>();
 	}
 	/**
-	 * Adds a Person object to Person list
+	 * Adds a Person object to Person list.
 	 *
 	 * @param f
 	 * @param s
@@ -25,7 +25,7 @@ public class PersonTracker {
 	}
 
 	/**
-	 * Reads the filename
+	 * Reads the filename.
 	 *
 	 * @param filename of the filename to be read and checked]
 	 * @return contents of the file
@@ -44,14 +44,14 @@ public class PersonTracker {
 				line = reader.readLine();
 			}
 			reader.close();
-		} catch (IOException exception){
+		} catch (IOException exception) {
 			throw new RuntimeException(exception);
 		}
 		return toReturn.toString();
 	}
 
 	/**
-	 * Parses the line and constructs a Person object to add to the liust
+	 * Parses the line and constructs a Person object to add to the liust.
 	 * @param line
 	 */
 	private void breakLine(String line) {
@@ -60,13 +60,14 @@ public class PersonTracker {
 	}
 
 	/**
-	 * Gets all the people present in the tracker and returns all the elements in the people list
+	 * Gets all the people present in the tracker
+	 * and returns all the elements in the people list.
 	 */
 	public String getPeopleList() {
 		return this.peopleList.toString();
 	}
 	/**
-	 * Returns the list of all people present in the tracker 
+	 * Returns the list of all people present in the tracker.
 	 * @return all people on a new line
 	 */
 
