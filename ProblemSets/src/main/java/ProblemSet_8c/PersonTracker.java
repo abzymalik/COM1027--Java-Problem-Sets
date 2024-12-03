@@ -27,7 +27,7 @@ public class PersonTracker {
 	/**
 	 * Reads the filename.
 	 *
-	 * @param filename of the filename to be read and checked]
+	 * @param file
 	 * @return contents of the file
 	 * @throws RunTimeException if file read fails
 	 */
@@ -35,7 +35,8 @@ public class PersonTracker {
 	public String readTextFile(String file) throws RuntimeException {
 		StringBuilder toReturn = new StringBuilder();
 		try {
-			BufferedReader reader = new BufferedReader(new FileReader(file));
+			BufferedReader reader = new BufferedReader
+					(new FileReader(file));
 			String line = reader.readLine();
 
 			while (line != null) {

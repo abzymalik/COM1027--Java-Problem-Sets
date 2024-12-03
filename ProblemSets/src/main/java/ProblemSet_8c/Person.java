@@ -5,13 +5,13 @@ public class Person {
 	private String surname;
 	private int age;
 
-/**
- * Constructs a Person object
- * 
- * @param name
- * @param surname
- * @param age
- */
+	/**
+	 * Constructs a Person object.
+	 *
+	 * @param forename
+	 * @param surname
+	 * @param age
+	 */
 	public Person(String forename, String surname, int age) {
 		super();
 		this.forename = forename;
